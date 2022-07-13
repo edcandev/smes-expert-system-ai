@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Poppins&display=swap" rel="stylesheet">
+    
+    <title>SMES | v0.0.1</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <img class="header__img" src="logo.png">
+        <p class="header__p ">TECNOLÓGICO DE ESTUDIOS SUPERIORES DE ECATEPEC</p>
+        <p class="header__p">Inteligencia Artificial | DISC</p>
+    </header>
+
+    <main class="main">
+        
+        <h1 class="h1">Schedule Maker Expert System</h1>
+
+        <div class="container">
+            <select class="container__select container__select--semestre">
+                <option disabled selected >Seleccione su  materia</option>
+                <option value="proOri">Programación Orientada a Objetos</option>
+                <option value="talBdd">Taller de Base de Datos</option>
+                <option value="ingSof">Ingeniería de Software</option>
+                <option value="intArt">Inteligencia Artificial</option>
+                <option value="matDis">Matemáticas Discretas</option>
+                <option value="talSis">Taller de Sistemas Operativos</option>
+                <option value="redCom">Redes de Computadoras</option>
+            </select>
+
+            <select disabled class="container__select container__select--materia">
+                <option disabled selected >Seleccione su turno</option>
+                <option class="mat1" value="matutino">Matutino</option>
+                <option class="mat2" value="vespertino">Vespertino</option>
+            </select>
+            
+            <textarea class="container__text-area" disabled></textarea>
+            <input type="button" value="Consultar" class="container__but" disabled>
+
+            <p class="container__p-materias"></p>
+        </div>
+
+    </main>
+    
+    
+    <script type="text/javascript" src="app.js"></script>
+    <script type="module" src="tau-proIog.js"></script>
+</body>
+</html>
